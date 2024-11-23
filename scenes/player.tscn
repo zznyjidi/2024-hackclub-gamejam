@@ -30,5 +30,6 @@ limit_top = 0
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 scale = Vector2(27.4375, 27.4062)
+energy = 0.75
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_ddnuv")

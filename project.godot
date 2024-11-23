@@ -35,6 +35,10 @@ Player_Move_RIGHT={
 ]
 }
 
+[autoload]
+
+Database="*res://scripts/database.gd"
+
 [dotnet]
 
 project/assembly_name="2024-hackclub-gamejam"

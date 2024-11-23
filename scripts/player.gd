@@ -19,4 +19,8 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	move_and_slide()
+	#move_and_slide()
+	var collision = move_and_collide(velocity * delta)
+	if collision:
+		velocity = velocity.slide(collision.get_normal())
+		print("Collition Triggered. ")

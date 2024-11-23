@@ -9,9 +9,6 @@ func _ready():
 	levelName2SecenDict = {
 		"char_select" = $CharSelect, 
 		"scene1_1" = $Scene_1_1, 
-		"scene1_2" = $Scene_1_2, 
-		"scene1_3" = $Scene_1_3, 
-		"scene2_1" = $Scene_2_1
 	}
 	for level in levelName2SecenDict.values():
 		level.set_layer_enabled(0, false)

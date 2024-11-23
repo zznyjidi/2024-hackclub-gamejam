@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://0ilx4mpvtafa"]
 
-[ext_resource type="TileSet" uid="uid://bfr2v0xaw15jd" path="res://assets/maps-tile.tres" id="1_wqs0o"]
+[ext_resource type="TileSet" uid="uid://cvgxi1orhm8jq" path="res://assets/maps-tile.tres" id="1_wqs0o"]
 [ext_resource type="Script" path="res://scripts/map.gd" id="1_wrdes"]
 
 [node name="Maps" type="Node2D"]

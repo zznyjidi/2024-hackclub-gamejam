@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://brjukwhnbnhvs"]
+
+[ext_resource type="Texture2D" uid="uid://b7jarfwrgk6ko" path="res://assets/Empty_heart.png" id="1_ctf05"]
+[ext_resource type="Texture2D" uid="uid://u5n2k6nloefs" path="res://assets/Heart.png" id="1_ukaki"]
+
+[node name="Heart" type="Node2D"]
+scale = Vector2(0.05, 0.05)
+
+[node name="EmptyHeart" type="Sprite2D" parent="."]
+texture = ExtResource("1_ctf05")
+
+[node name="Heart" type="Sprite2D" parent="."]
+texture = ExtResource("1_ukaki")

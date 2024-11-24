@@ -29,9 +29,9 @@ func _physics_process(delta):
 
 
 func _on_node_2d_player_attact():
-	var b = Arrow.instantiate()
+	var arrow = Arrow.instantiate()
 	var mousePosition = get_viewport().get_camera_2d().get_global_mouse_position()
 	var delta = mousePosition - global_position
 	var angle = atan2(delta.y, delta.x)
-	b.start(self.global_position + (delta.normalized() * 80), angle)
-	get_tree().root.add_child(b)
+	arrow.start(self.global_position + (delta.normalized() * 80), angle)
+	get_tree().root.add_child(arrow)

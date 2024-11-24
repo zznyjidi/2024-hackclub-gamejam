@@ -1,12 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6laqim2p8sd0"]
+[gd_scene load_steps=5 format=3 uid="uid://c6laqim2p8sd0"]
 
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_8wpei"]
 [ext_resource type="PackedScene" uid="uid://dxnvyudqv4xbq" path="res://scenes/player.tscn" id="1_lyx3a"]
 [ext_resource type="PackedScene" uid="uid://0ilx4mpvtafa" path="res://scenes/map.tscn" id="2_c1nqq"]
+[ext_resource type="PackedScene" uid="uid://cecgfyus76o41" path="res://scenes/enemy.tscn" id="3_iuctv"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_8wpei")
 
 [node name="Maps" parent="." instance=ExtResource("2_c1nqq")]
 scale = Vector2(3, 3)
 
 [node name="Player" parent="." instance=ExtResource("1_lyx3a")]
 position = Vector2(317, 413)
+
+[node name="Enemy" parent="." instance=ExtResource("3_iuctv")]
+position = Vector2(531, 552)
+
+[connection signal="Player_ATTACT" from="." to="Player" method="_on_node_2d_player_attact"]

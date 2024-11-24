@@ -1,6 +1,7 @@
 extends Node2D
+signal nextLevel_prepair
 
-var currentScene = "char_select"
+var currentScene = 1
 
 var levelName2SecenDict
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://e1cyxp3p4e1f"]
+[gd_scene load_steps=3 format=3 uid="uid://bux3s44283mlj"]
 
 [ext_resource type="Script" path="res://scripts/arrow.gd" id="1_44yxl"]
 [ext_resource type="Texture2D" uid="uid://bkv5pxp008sgq" path="res://assets/Arrow.png" id="1_gtwcq"]
@@ -7,10 +7,12 @@
 script = ExtResource("1_44yxl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.256637, 0.265487)
 texture = ExtResource("1_gtwcq")
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-8, -21)
+position = Vector2(1.19209e-07, -6)
+scale = Vector2(0.23628, 0.298913)
 polygon = PackedVector2Array(94, 23, 68, -1, -70, 7, -70, 39, 68, 45)
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

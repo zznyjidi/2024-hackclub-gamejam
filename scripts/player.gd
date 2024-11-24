@@ -29,6 +29,7 @@ func _physics_process(delta):
 
 
 func _on_node_2d_player_attact():
+	print(global_position)
 	var b = Arrow.instantiate()
-	b.start(self.global_position, 0)
+	b.start(self.global_position + Vector2(50, 0), 0)
 	get_tree().root.add_child(b)

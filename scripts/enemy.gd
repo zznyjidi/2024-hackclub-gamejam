@@ -9,6 +9,7 @@ func _physics_process(delta):
 		var direction = (Database.playerPosition - self.global_position).normalized()
 		var acceleration = direction * SPEED/30
 		velocity += acceleration
+		velocity *= 0.98
 	elif distance > 60:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.y = move_toward(velocity.y, 0, SPEED)

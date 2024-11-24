@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://0ilx4mpvtafa"]
+[gd_scene load_steps=5 format=3 uid="uid://0ilx4mpvtafa"]
 
 [ext_resource type="TileSet" uid="uid://bfr2v0xaw15jd" path="res://assets/maps-tile.tres" id="1_wqs0o"]
 [ext_resource type="Script" path="res://scripts/map.gd" id="1_wrdes"]
@@ -8,9 +8,6 @@ polygon = PackedVector2Array(1184, 288, 1184, 320, 1152, 320, 1152, 480, 1312, 4
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_x1dp3"]
 polygon = PackedVector2Array(2464, 0, 2464, 96, 2432, 96, 2432, 128, 2496, 128, 2496, 32, 2528, 32, 2528, 480, 2592, 480, 2592, 672, 2624, 672, 2624, 704, 2752, 704, 2752, 672, 2816, 672, 2816, 640, 2848, 640, 2848, 608, 2880, 608, 2880, 576, 2912, 576, 2912, 544, 2944, 544, 2944, 512, 2976, 512, 2976, 480, 3008, 480, 3008, 352, 2752, 352, 2752, 32, 3296, 32, 3296, 352, 3040, 352, 3040, 512, 3008, 512, 3008, 544, 2976, 544, 2976, 576, 2976, 576, 2944, 576, 2944, 608, 2912, 608, 2912, 640, 2880, 640, 2880, 672, 2848, 672, 2848, 704, 3200, 704, 3200, 512, 3424, 512, 3424, 768, 2496, 768, 2496, 160, 2432, 160, 2432, 192, 2464, 192, 2464, 800, 3455, 800, 3451, -2)
-
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_wmuqy"]
-polygon = PackedVector2Array(287.936, 0, 287.936, 96, 320.041, 96, 320.041, 128, 255.832, 128, 255.832, 32, 32.1044, 32, 32.1044, 256, 255.832, 256, 255.832, 160, 320.041, 160, 320.041, 192, 287.936, 192, 287.936, 288, 1.00326, 289, 0, 0)
 
 [node name="Maps" type="Node2D"]
 script = ExtResource("1_wrdes")
@@ -48,22 +45,6 @@ visible = false
 occluder = SubResource("OccluderPolygon2D_x1dp3")
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1"]
-occluder = SubResource("OccluderPolygon2D_varsc")
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1/LightOccluder2D"]
-position = Vector2(224, 0)
-occluder = SubResource("OccluderPolygon2D_varsc")
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1/LightOccluder2D/LightOccluder2D"]
-position = Vector2(224, 0)
-occluder = SubResource("OccluderPolygon2D_varsc")
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1/LightOccluder2D/LightOccluder2D/LightOccluder2D"]
-position = Vector2(224, 0)
-occluder = SubResource("OccluderPolygon2D_varsc")
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1/LightOccluder2D/LightOccluder2D/LightOccluder2D/LightOccluder2D"]
-position = Vector2(224, 0)
 occluder = SubResource("OccluderPolygon2D_varsc")
 
 [node name="Dungon" type="TileMap" parent="."]

@@ -1,7 +1,6 @@
 extends Node2D
-signal nextLevel_prepair
 
-var currentScene = 1
+var currentScene = "char_select"
 
 var levelName2SecenDict
 
@@ -10,7 +9,7 @@ func _ready():
 	levelName2SecenDict = {
 		"char_select" = $CharSelect, 
 		"scene1_1" = $Scene_1_1, 
-		"dungon_l1" = $Dungon, 
+		"dungon_l1" = $Dungon,
 		"dungon_l2" = $Dungon_2
 	}
 	for level in levelName2SecenDict.values():

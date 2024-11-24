@@ -50,8 +50,21 @@ occluder = SubResource("OccluderPolygon2D_x1dp3")
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1"]
 occluder = SubResource("OccluderPolygon2D_varsc")
 
-[node name="LightOccluder2D7" type="LightOccluder2D" parent="Scene_1_1"]
-occluder = SubResource("OccluderPolygon2D_wmuqy")
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1/LightOccluder2D"]
+position = Vector2(224, 0)
+occluder = SubResource("OccluderPolygon2D_varsc")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1/LightOccluder2D/LightOccluder2D"]
+position = Vector2(224, 0)
+occluder = SubResource("OccluderPolygon2D_varsc")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1/LightOccluder2D/LightOccluder2D/LightOccluder2D"]
+position = Vector2(224, 0)
+occluder = SubResource("OccluderPolygon2D_varsc")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Scene_1_1/LightOccluder2D/LightOccluder2D/LightOccluder2D/LightOccluder2D"]
+position = Vector2(224, 0)
+occluder = SubResource("OccluderPolygon2D_varsc")
 
 [node name="Dungon" type="TileMap" parent="."]
 visible = false

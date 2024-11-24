@@ -5,7 +5,9 @@ const SPEED = 200.0
 func _physics_process(delta):
 #	print(Database.playerPosition - self.global_position)
 	var distance = hypot(Database.playerPosition - self.global_position)
-	if distance > 80:
+	if distance > Database.enemyVision:
+		velocity = Vector2(0, 0)
+	elif distance > 80:
 		var direction = (Database.playerPosition - self.global_position).normalized()
 		var acceleration = direction * SPEED/30
 		velocity += acceleration

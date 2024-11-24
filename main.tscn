@@ -13,8 +13,9 @@ scale = Vector2(3, 3)
 
 [node name="Player" parent="." instance=ExtResource("1_lyx3a")]
 position = Vector2(317, 413)
+scale = Vector2(1.5, 1.5)
 
 [node name="Enemy" parent="." instance=ExtResource("3_iuctv")]
-position = Vector2(531, 552)
+position = Vector2(3798, 1316)
 
 [connection signal="Player_ATTACT" from="." to="Player" method="_on_node_2d_player_attact"]

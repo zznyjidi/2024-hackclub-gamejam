@@ -2,6 +2,7 @@ extends Node2D
 
 var heartIcon = preload("res://scenes/heart.tscn")
 var hearsList: Array[Node2D] = []
+var hitSound = preload("res://assets/metal_pipe.ogg")
 var lastFrameHeart = 0
 var lastFrameHP = 0
 
@@ -18,6 +19,8 @@ func _process(delta):
 	
 	if Database.playerCurrentHP < lastFrameHP:
 		hearsList[lastFrameHP - 1].get_child(1).visible = false
+		Database.nodeAudioPlayer.stream = hitSound
+		Database.nodeAudioPlayer.play()
 		lastFrameHP -= 1
 	
 	position = get_viewport().get_camera_2d().get_screen_center_position()

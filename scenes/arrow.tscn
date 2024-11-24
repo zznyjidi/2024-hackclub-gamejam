@@ -1,10 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bux3s44283mlj"]
+[gd_scene load_steps=3 format=3 uid="uid://e1cyxp3p4e1f"]
 
 [ext_resource type="Script" path="res://scripts/arrow.gd" id="1_44yxl"]
 [ext_resource type="Texture2D" uid="uid://bkv5pxp008sgq" path="res://assets/Arrow.png" id="1_gtwcq"]
 
 [node name="Arrow" type="CharacterBody2D"]
-visible = false
 script = ExtResource("1_44yxl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

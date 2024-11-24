@@ -35,3 +35,7 @@ func _on_node_2d_player_attact():
 	var angle = atan2(delta.y, delta.x)
 	arrow.start(self.global_position + (delta.normalized() * 80), angle)
 	get_tree().root.add_child(arrow)
+
+
+func _on_maps_next_level_prepair():
+	position = Vector2(150, 150)
